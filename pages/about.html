@@ -4,26 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>교회소개 | 보광중앙교회</title>
-  <meta name="description" content="보광중앙교회의 인사말, 비전과 사명, 교회 연혁을 소개합니다.">
+  <meta name="description" content="보광중앙교회의 담임목사 인사말, 교역자 소개, 비전과 사명, 교회 연혁을 소개합니다.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .staff-group { margin: 40px 0; }
+    .staff-group > .sg-title { display:flex; align-items:center; gap:10px; font-size:22px; color:var(--navy); font-weight:800; margin-bottom:20px; }
+    .staff-group > .sg-title .badge-line { flex:1; height:1px; background:var(--gray-200); }
+    .staff-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .staff-grid.two { grid-template-columns:repeat(2,1fr); max-width:720px; }
+    .staff-grid.one { grid-template-columns:1fr; max-width:360px; }
+    .staff-card { display:flex; gap:16px; align-items:flex-start; background:#fff; border:1px solid var(--gray-100); border-radius:14px; padding:20px; box-shadow:var(--shadow); }
+    .staff-avatar { flex:none; width:62px; height:62px; border-radius:50%; background:var(--navy); color:var(--gold); display:grid; place-items:center; font-size:24px; font-weight:800; }
+    .staff-info b { display:block; font-size:17px; color:var(--navy); }
+    .staff-info .role { color:var(--blue); font-size:13.5px; font-weight:700; margin:3px 0 6px; }
+    .staff-info ul li { font-size:13px; color:var(--gray-600); line-height:1.6; }
+    @media(max-width:820px){ .staff-grid, .staff-grid.two { grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
 
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="../index.html" class="logo">
-        <div class="logo-mark"><i class="fa-solid fa-cross"></i></div>
-        <div class="logo-text"><b>보광중앙교회</b><span>Bogwang Central Church</span></div>
+        <img class="logo-mark" src="../images/logo.svg" alt="보광중앙교회 로고">
+        <div class="logo-text"><b>보광중앙교회</b><span>질서있고 화평한 교회</span></div>
       </a>
       <nav class="main-nav" id="nav">
         <ul>
           <li><a href="about.html">교회소개</a>
             <ul class="dropdown">
-              <li><a href="about.html">인사말</a></li>
+              <li><a href="about.html">담임목사 인사말</a></li>
+              <li><a href="about.html#staff">교역자 소개</a></li>
               <li><a href="about.html#vision">비전과 사명</a></li>
               <li><a href="about.html#history">교회 연혁</a></li>
               <li><a href="location.html">오시는 길</a></li>
@@ -66,38 +81,114 @@
     <div class="breadcrumb"><a href="../index.html">홈</a> <i class="fa-solid fa-angle-right"></i> <span>교회소개</span></div>
   </section>
 
+  <!-- GREETING -->
   <section>
     <div class="container prose">
       <span class="eyebrow" style="color:var(--blue);font-weight:700;letter-spacing:3px;">GREETINGS</span>
       <h2 style="margin-top:8px;">담임목사 인사말</h2>
-      <p>보광중앙교회 홈페이지를 방문해 주신 여러분을 진심으로 환영합니다.</p>
-      <p>우리 교회는 “오직 하나님께 영광, 이웃에게 사랑”이라는 표어 아래 하나님의 말씀을 삶의 중심에 두고, 예배와 기도로 하나님과 깊이 교제하며, 사랑으로 서로를 섬기는 신앙 공동체입니다.</p>
-      <p>세상의 분주함 속에서 참된 안식과 소망을 찾으시는 모든 분들이 이곳에서 예수 그리스도를 만나고, 삶이 회복되며, 하나님이 주시는 풍성한 은혜를 함께 누리시길 소망합니다. 언제나 열려 있는 우리 교회로 여러분을 초대합니다.</p>
+      <p style="font-size:20px;color:var(--navy);font-weight:700;">환영합니다!</p>
+      <p style="color:var(--blue);font-weight:700;font-size:18px;">“하나되는 교회가 되게 하소서” (요한복음 17:21~22)</p>
+      <p>예수님께서는 공생애 기간 중, 곧 2천 년도 더 전에 우리들을 위해 간절히 기도하셨습니다. 그 증거이자 내용이 바로 요한복음 17장에 기록되어 있습니다. 예수님께서는 제자들뿐 아니라, 이후에도 신앙생활을 하며 하나님의 나라를 향해 나아갈 믿음의 자녀들을 위하여 간절히 기도하십니다.</p>
+      <h3>첫째, 영적으로 하나되는 교회를 이루어 갑시다.</h3>
+      <p>21절에서 “그들도 다 하나가 되어”라고 말씀하십니다. 이는 단지 외적인 연합을 의미하는 것이 아닙니다. 성부 하나님과 성자 예수님이 완전한 일체를 이루는 것처럼, 그리스도인들도 영적으로 일체를 이루어야 한다는 것을 의미합니다. 이러한 연합을 통해 세상은 예수님이 하나님께로부터 보내심을 받았다는 사실을 더욱 명확히 알게 될 것입니다.</p>
+      <h3>둘째, 우리가 하나 될 때 하나님의 영광을 나타냅니다.</h3>
+      <p>22절에서 “내게 주신 영광을 내가 그들에게 주었사오니”라고 말씀하십니다. 예수님께서는 하나님 아버지께서 주신 영광을 제자들에게도 나누어 주셨습니다. 제자들 또한 하나가 되어야 하며, 그리스도의 몸된 교회가 사랑과 일치 속에서 살아가야 함을 강조합니다.</p>
+      <p>올해, 우리 교회는 임시처소에서 예배드리며 공동체의 하나됨을 지켜내어야 합니다. 이 과정이 결코 쉽지 않겠지만, 우리는 힘과 마음을 여기에 쏟아야 합니다. 많은 사역들을 감당하느라 교회의 하나됨을 잃어버리는 일이 없도록, 우리 모든 성도들이 마음과 뜻을 모아주시길 바랍니다.</p>
       <div class="welcome-sign">
         <span class="line"></span>
-        <div><b>담임목사 김은혜</b><span> &nbsp;보광중앙교회</span></div>
+        <div><b>보광중앙교회 담임목사 황광용</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF -->
+  <section id="staff" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">CHURCH STAFF</span>
+        <h2>교역자 소개</h2>
+        <div class="divider"></div>
       </div>
 
+      <div class="staff-group">
+        <div class="sg-title">원로목사 · 담임목사 <span class="badge-line"></span></div>
+        <div class="staff-grid two">
+          <div class="staff-card">
+            <div class="staff-avatar">김</div>
+            <div class="staff-info"><b>김병복 목사</b><div class="role">원로목사</div></div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">황</div>
+            <div class="staff-info"><b>황광용 목사</b><div class="role">담임목사</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="staff-group">
+        <div class="sg-title">전임목사 <span class="badge-line"></span></div>
+        <div class="staff-grid">
+          <div class="staff-card">
+            <div class="staff-avatar">최</div>
+            <div class="staff-info"><b>최용현 목사</b><div class="role">3교구</div>
+              <ul><li>행정 · 예배/정보통신 사역</li><li>선교/관리 사역 · 중보기도단</li><li>카리스 찬양단</li></ul></div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">조</div>
+            <div class="staff-info"><b>조추협 목사</b><div class="role">2교구</div>
+              <ul><li>양육/목양 사역 · 사회봉사 사역</li><li>새가족부 · 전도대</li><li>여디디야 찬양단</li></ul></div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">신</div>
+            <div class="staff-info"><b>신연섭 목사</b><div class="role">1교구</div>
+              <ul><li>청년부 · 교회학교 총괄</li><li>주아름 찬양단</li></ul></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="staff-group">
+        <div class="sg-title">준전임 · 교육 · 전도사 <span class="badge-line"></span></div>
+        <div class="staff-grid">
+          <div class="staff-card">
+            <div class="staff-avatar">김</div>
+            <div class="staff-info"><b>김형진 목사</b><div class="role">준전임목사 · 청소년부</div>
+              <ul><li>방송전담</li></ul></div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">안</div>
+            <div class="staff-info"><b>안지애 목사</b><div class="role">교육목사 · 아동부</div></div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-avatar">전</div>
+            <div class="staff-info"><b>전선영 전도사</b><div class="role">전도사 · 유치부</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section>
+    <div class="container prose">
       <h2 id="vision">비전과 사명</h2>
-      <p>보광중앙교회는 다음 세대와 지역사회, 그리고 열방을 향한 하나님의 부르심에 응답하는 교회를 지향합니다.</p>
+      <p>보광중앙교회는 예수 그리스도 안에서 하나 되어, <b>“질서있고 화평한 교회”</b>를 이루어 가는 것을 사명으로 삼습니다. 다음 세대와 지역사회, 그리고 열방을 향한 하나님의 부르심에 응답하는 교회를 지향합니다.</p>
       <ul class="check">
+        <li><b>하나됨</b> — 그리스도 안에서 영적으로 하나 되는 연합의 공동체</li>
         <li><b>예배</b> — 신령과 진정으로 하나님께 영광 돌리는 예배 공동체</li>
         <li><b>말씀</b> — 성경 말씀 위에 굳게 서서 삶으로 순종하는 제자 공동체</li>
-        <li><b>교제</b> — 사랑과 섬김으로 서로를 세우는 가족 공동체</li>
+        <li><b>교제</b> — 질서와 화평 가운데 서로를 세우는 가족 공동체</li>
         <li><b>선교</b> — 지역과 열방에 복음을 전하는 선교 공동체</li>
-        <li><b>봉사</b> — 이웃의 필요를 돌보며 세상을 섬기는 나눔 공동체</li>
       </ul>
 
       <h2 id="history">교회 연혁</h2>
       <table class="info-table">
         <tr><th style="width:120px;">연도</th><th>주요 내용</th></tr>
-        <tr><td>1985</td><td>보광중앙교회 창립 예배</td></tr>
-        <tr><td>1992</td><td>현 위치로 성전 이전 및 봉헌</td></tr>
-        <tr><td>2003</td><td>교육관 신축 · 교회학교 확장</td></tr>
-        <tr><td>2011</td><td>지역사회 섬김 센터 개관</td></tr>
-        <tr><td>2018</td><td>해외 선교부 파송 및 자매결연</td></tr>
-        <tr><td>2024</td><td>온라인 예배 및 미디어 사역 강화</td></tr>
+        <tr><td>창립</td><td>보광중앙교회 창립 예배</td></tr>
+        <tr><td>성장</td><td>교육관 확장 및 교회학교 부흥</td></tr>
+        <tr><td>섬김</td><td>지역사회 섬김 및 사회봉사 사역 확대</td></tr>
+        <tr><td>선교</td><td>국내외 선교 파송 및 자매결연</td></tr>
+        <tr><td>현재</td><td>임시처소 예배 · 공동체의 하나됨을 세워가는 중</td></tr>
       </table>
+      <p style="font-size:14px;color:var(--gray-400);">※ 연혁의 구체적 연도·내용은 교회에서 확정된 자료로 채워 넣으시면 됩니다.</p>
     </div>
   </section>
 

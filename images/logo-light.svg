@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="보광중앙교회 로고">
+  <ellipse cx="200" cy="140" rx="190" ry="116" stroke-width="6"/>
+  <line x1="200" y1="40" x2="200" y2="214" stroke-width="12" stroke-linecap="butt"/>
+  <line x1="158" y1="62" x2="242" y2="62" stroke-width="11" stroke-linecap="butt"/>
+  <path d="M200,96 Q112,150 58,182"/>
+  <path d="M200,96 Q122,166 96,200"/>
+  <path d="M200,96 Q152,176 132,210"/>
+  <path d="M200,96 Q288,150 342,182"/>
+  <path d="M200,96 Q278,166 304,200"/>
+  <path d="M200,96 Q248,176 268,210"/>
+  <path d="M150,214 A58,46 0 0 1 250,214" stroke-width="6"/>
+  <circle cx="200" cy="216" r="4" fill="#ffffff" stroke="none"/>
+</svg>

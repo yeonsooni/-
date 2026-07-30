@@ -10,8 +10,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
-            <div class="logo-mark"><i class="fa-solid fa-cross"></i></div>
-            <div class="logo-text"><b>보광중앙교회</b><span>Bogwang Central Church</span></div>
+            <img class="logo-mark" src="../images/logo-light.svg" alt="보광중앙교회 로고">
+            <div class="logo-text"><b>보광중앙교회</b><span>질서있고 화평한 교회</span></div>
           </div>
           <p>말씀 위에 세워져 이웃과 세상을 섬기며,<br>예수 그리스도의 복음을 전하는 교회입니다.</p>
           <div class="socials">
