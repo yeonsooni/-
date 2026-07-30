@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오시는 길 | 보광중앙교회</title>
+  <meta name="description" content="보광중앙교회 위치, 대중교통, 주차 안내입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-mark"><i class="fa-solid fa-cross"></i></div>
+        <div class="logo-text"><b>보광중앙교회</b><span>Bogwang Central Church</span></div>
+      </a>
+      <nav class="main-nav" id="nav">
+        <ul>
+          <li><a href="about.html">교회소개</a>
+            <ul class="dropdown">
+              <li><a href="about.html">인사말</a></li>
+              <li><a href="about.html#vision">비전과 사명</a></li>
+              <li><a href="about.html#history">교회 연혁</a></li>
+              <li><a href="location.html">오시는 길</a></li>
+            </ul>
+          </li>
+          <li><a href="worship.html">예배안내</a>
+            <ul class="dropdown">
+              <li><a href="worship.html">예배 시간</a></li>
+              <li><a href="worship.html#online">온라인 예배</a></li>
+              <li><a href="sermons.html">설교 말씀</a></li>
+            </ul>
+          </li>
+          <li><a href="ministry.html">교육·훈련</a>
+            <ul class="dropdown">
+              <li><a href="ministry.html#children">교회학교</a></li>
+              <li><a href="ministry.html#youth">청년부</a></li>
+              <li><a href="ministry.html#discipleship">제자훈련</a></li>
+            </ul>
+          </li>
+          <li><a href="news.html">교회소식</a>
+            <ul class="dropdown">
+              <li><a href="news.html">공지사항</a></li>
+              <li><a href="news.html#bulletin">주보</a></li>
+              <li><a href="news.html#gallery">갤러리</a></li>
+            </ul>
+          </li>
+          <li><a href="sermons.html">설교말씀</a></li>
+          <li><a href="location.html">오시는길</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="worship.html#online" class="btn btn-primary"><i class="fa-solid fa-play"></i> 온라인예배</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="메뉴"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>오시는 길</h1>
+    <div class="breadcrumb"><a href="../index.html">홈</a> <i class="fa-solid fa-angle-right"></i> <span>오시는길</span></div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:44px;">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=126.9950%2C37.5280%2C127.0050%2C37.5340&amp;layer=mapnik" style="width:100%;height:420px;border:0;" title="교회 위치 지도" loading="lazy"></iframe>
+      </div>
+
+      <div class="news-grid">
+        <div class="panel">
+          <div class="panel-head"><h3>교회 안내</h3></div>
+          <table class="info-table">
+            <tr><th style="width:110px;">주소</th><td>서울특별시 용산구 보광로 00 (보광동)</td></tr>
+            <tr><th>대표전화</th><td>02-000-0000</td></tr>
+            <tr><th>팩스</th><td>02-000-0001</td></tr>
+            <tr><th>이메일</th><td>bogwang@church.org</td></tr>
+          </table>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3>교통 안내</h3></div>
+          <div class="prose" style="max-width:none;">
+            <h3><i class="fa-solid fa-train-subway" style="color:var(--blue);"></i> 지하철</h3>
+            <p>6호선 이태원역 · 한강진역에서 도보 10분 이내, 마을버스 이용 시 교회 앞 하차</p>
+            <h3><i class="fa-solid fa-bus" style="color:var(--blue);"></i> 버스</h3>
+            <p>간선/지선버스 보광동 정류장 하차 후 도보 3분</p>
+            <h3><i class="fa-solid fa-car" style="color:var(--blue);"></i> 주차</h3>
+            <p>교회 지하 주차장 이용 가능 (주일 혼잡 시 인근 공영주차장 안내)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/main.js"></script>
+  <script src="../js/footer.js"></script>
+</body>
+</html>
